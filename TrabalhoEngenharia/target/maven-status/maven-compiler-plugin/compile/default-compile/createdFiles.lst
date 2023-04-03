@@ -1,0 +1,4 @@
+com\mycompany\entities\Mercado.class
+com\mycompany\entities\Pedido.class
+com\mycompany\entities\FormaPagamento.class
+com\mycompany\entities\Produto.class

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Mercado.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TrabalhoEngenharia</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.entities</a> &gt; <span class="el_source">Mercado.java</span></div><h1>Mercado.java</h1><pre class="source lang-java linenums">package com.mycompany.entities;
+
+import java.util.ArrayList;
+
+public class Mercado {
+
+    public ArrayList&lt;Produto&gt; listEstoque;
+    
+<span class="fc" id="L9">    public Mercado() {</span>
+<span class="fc" id="L10">        this.listEstoque = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L11">    }</span>
+
+    public void InserirEstoque(Produto produto) {
+<span class="fc" id="L14">        this.listEstoque.add(produto);</span>
+<span class="fc" id="L15">    }</span>
+
+    public void EditarEstoque(Produto produto, String novoNome, double novoPreco, int novaQuantidade) {
+<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        for (Produto p : listEstoque) {</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">            if (p.equals(produto)) {</span>
+<span class="fc" id="L20">                p.setNome(novoNome);</span>
+<span class="fc" id="L21">                p.setValor(novoPreco);</span>
+<span class="fc" id="L22">                p.setQuantidade(novaQuantidade);</span>
+<span class="fc" id="L23">                break;</span>
+            }
+<span class="nc" id="L25">        }</span>
+<span class="fc" id="L26">    }</span>
+
+    public void ExcluirDoEstoque(int id) {
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">        for (int i = 0; i &lt; listEstoque.size(); i++) {</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">            if (listEstoque.get(i).getId() == id) {</span>
+<span class="fc" id="L31">                listEstoque.remove(i);</span>
+<span class="fc" id="L32">                return;</span>
+            }
+        }
+<span class="nc" id="L35">        System.out.println(&quot;Produto não encontrado&quot;);</span>
+<span class="nc" id="L36">    }</span>
+
+    public Produto getProdutoPorId(int id) {
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        for (Produto produto : listEstoque) {</span>
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">            if (produto.getId() == id) {</span>
+<span class="nc" id="L41">                return produto;</span>
+            }
+<span class="fc" id="L43">        }</span>
+<span class="fc" id="L44">        return null;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

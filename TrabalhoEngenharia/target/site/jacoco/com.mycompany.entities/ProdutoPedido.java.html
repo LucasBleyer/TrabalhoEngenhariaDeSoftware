@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProdutoPedido.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TrabalhoEngenhariaCerto</a> &gt; <a href="index.source.html" class="el_package">com.mycompany.entities</a> &gt; <span class="el_source">ProdutoPedido.java</span></div><h1>ProdutoPedido.java</h1><pre class="source lang-java linenums">
+package com.mycompany.entities;
+
+
+public class ProdutoPedido {
+<span class="fc" id="L6">    private static int count = 1;</span>
+    
+    private int id;
+    private String nome;
+    private double valor;
+    private int quantidade;
+
+<span class="fc" id="L13">    public ProdutoPedido(String nome, double valor, int quantidadeStoque) {</span>
+<span class="fc" id="L14">        this.id = count;</span>
+<span class="fc" id="L15">        this.nome = nome;</span>
+<span class="fc" id="L16">        this.valor = valor;</span>
+<span class="fc" id="L17">        this.quantidade = quantidadeStoque;</span>
+        
+<span class="fc" id="L19">        ProdutoPedido.count += 1;</span>
+<span class="fc" id="L20">    }</span>
+
+    public int getId() {
+<span class="nc" id="L23">        return id;</span>
+    }
+
+    public String getNome() {
+<span class="fc" id="L27">        return nome;</span>
+    }
+
+    public void setNome(String nome) {
+<span class="nc" id="L31">        this.nome = nome;</span>
+<span class="nc" id="L32">    }</span>
+
+    public double getValor() {
+<span class="nc" id="L35">        return valor;</span>
+    }
+
+    public void setValor(double valor) {
+<span class="nc" id="L39">        this.valor = valor;</span>
+<span class="nc" id="L40">    }</span>
+
+    public int getQuantidade() {
+<span class="fc" id="L43">        return quantidade;</span>
+    }
+
+    public void setQuantidade(int quantidadeStock) {
+<span class="fc" id="L47">        this.quantidade = quantidadeStock;</span>
+<span class="fc" id="L48">    }</span>
+
+    public String toString() {
+<span class="nc" id="L51">        return &quot;Id: &quot; + this.getId() + &quot;Nome: &quot; + this.getNome() + &quot;valor: &quot; + this.getValor() + &quot;Quantidade em Stock: &quot; + this.getQuantidade();</span>
+    }
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

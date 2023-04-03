@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+TrabalhoEngenharia,com.mycompany.entities,Mercado,9,79,5,7,4,20,5,6,0,5
+TrabalhoEngenharia,com.mycompany.entities,Pedido,19,282,6,18,9,69,11,17,5,10
+TrabalhoEngenharia,com.mycompany.entities,Produto,0,56,0,0,0,19,0,10,0,10
+TrabalhoEngenharia,com.mycompany.entities,FormaPagamento,0,21,0,0,0,2,0,1,0,1
+TrabalhoEngenharia,com.mycompany.trabalhoengenharia,TrabalhoEngenharia,7,0,0,0,3,0,2,0,2,0
