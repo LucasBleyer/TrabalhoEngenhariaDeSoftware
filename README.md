@@ -13,7 +13,7 @@
 - ReadMe: João Pedro
 
 # Cálculo de Complexidade Ciclomática
-- Pedido : adicionarProdutoNoPedido = 4 CCS
-- Pedido : removerProduto = 3 CCS 
-- Pedido : concluirVenda = 5 CCS
-- Mercado : editarEstoque = 1 CCS
+- Pedido : adicionarProdutoNoPedido = 5 CCS
+- Pedido : removerProduto = 4 CCS 
+- Pedido : concluirVenda = 7 CCS
+- Mercado : editarEstoque = 3 CCS
